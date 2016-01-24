@@ -18,21 +18,23 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+
+  background: $primaryColor url(/images/sky3.png) no-repeat center top;
+  font: 18px/1.4 $helveticaNeue;
+  color: $lightGray;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
+  max-width: 980px;
+  padding: 0 ;
   width: 100%;
+  border: 1px solid green; 
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: $secondaryColor;
   font-weight: bold;
 
   line-height: 1.7;
@@ -155,8 +157,9 @@ img {
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+   background: $primaryColorHigh;
+  padding: 5px; 
+  //border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
@@ -192,7 +195,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $secondaryColor;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -237,9 +240,40 @@ nav {
   }
 }
 
-//
-// .main
-//
+/*
+ .main
+*/
+
+#main {
+   width: 1500px;
+   height: 1600px; 
+   margin:0 auto;
+   padding : 5px;
+   background: #A1A1D0;
+   overflow: hidden; 
+}
+
+#prim_cont {
+  float: left;
+  width: 760px;
+  
+}
+
+#sec_cont {
+  float: right;
+  width: 200px;
+  background-color: $primaryColorHigh;
+  font-family: $helveticaNeue;
+  color: $secondaryColor;
+  padding: 15px;
+}
+
+
+.posts {
+  background-color: $primaryColorHigh;  
+  /*width: 561px; */ 
+  padding: 30px 30px 10px 30px;  
+  } 
 
 .posts > .post {
   padding-bottom: 2em;
@@ -272,16 +306,31 @@ nav {
 }
 
 .wrapper-footer {
+  clear: both;
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
 }
 
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+	margin: 10px;
+}
+
 footer {
   padding: 20px 0;
   text-align: center;
 }
+
+
+
+
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start

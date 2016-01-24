@@ -35,9 +35,19 @@
     </div>
 
     <div id="main" role="main" class="container">
+      <!-- Primary content, just inherit from .main -->
+      <!-- in theory, both primary content and secondary classes share parent container, main. -->  
+      <div id="prim_cont" class = "container"> 
       {{ content }}
-    </div>
+    </div> <!--End primary content block -->  
+    
 
+    <!-- Secondary content, for the sidebar  -->  
+    <div id="sec_cont" class = "container">
+      {% include sec_cont.html %}
+
+    </div> <!-- End secondary content block -->   
+    </div> <!-- End main -->
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
