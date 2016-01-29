@@ -246,7 +246,8 @@ nav {
 
 #main {
    width: 1500px;
-   height: 1600px; 
+   /* height: 1600px; */ 
+   background-size: 100% 100%;
    margin:0 auto;
    padding : 5px;
    background: #A1A1D0;
@@ -256,6 +257,7 @@ nav {
 #prim_cont {
   float: left;
   width: 760px;
+  background-color: $primaryColorHigh;
   
 }
 
