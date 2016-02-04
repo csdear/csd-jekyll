@@ -27,9 +27,9 @@ body {
 .container {
   margin: 0 auto;
   max-width: 980px;
-  padding: 0 ;
+  padding: 10px ;
   width: 100%;
-  border: 1px solid green; 
+  /*border: 1px solid green; */ 
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -157,10 +157,12 @@ img {
 }
 
 .masthead {
-   background: $primaryColorHigh;
-  padding: 5px; 
+   /*background: $primaryColorHigh;*/
+  background-image: url(/images/headerCircuits.png);
+  padding: 0px; 
   //border-bottom: 1px solid $lightGray;
-
+    width: 960px;
+    height: 97px;
   @include mobile {
     text-align: center;
   }
@@ -214,6 +216,7 @@ img {
 }
 
 nav {
+   
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
@@ -228,10 +231,13 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $secondaryColor;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
+    position: relative;
+    top: 45px;
+    right: 191px;
 
     @include mobile {
       margin: 0 10px;
@@ -245,12 +251,14 @@ nav {
 */
 
 #main {
+   position: relative;
+   bottom: 45px;
    width: 1500px;
    /* height: 1600px; */ 
    background-size: 100% 100%;
    margin:0 auto;
    padding : 5px;
-   background: #A1A1D0;
+   /*background: #A1A1D0; */
    overflow: hidden; 
 }
 
