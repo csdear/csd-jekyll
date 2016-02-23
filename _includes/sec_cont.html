@@ -1,11 +1,15 @@
 
 <div class ="container">
-	<h3>Recent$ Posts</h3> 
+	<h3>RECENT</h3> 
 	<ul>
 		{% for post in site.posts limit:10 %}
 			<li><a href="{{ site.baseurl }}{{post.url}}">{{ post.title}}</a></li>
 		{% endfor %}
 	</ul>
+</div>
+
+<div class ="container">  
+    {% include social_networking.html %}
 </div> 
 
 <div class ="container">
@@ -17,6 +21,7 @@
 
 <div class="container">
 <h3 >Categories</h3>
+<!--TODO : Categories/Tags -->
 <ul>
   {% if site.categories.first[0] == null %}
     {% for category in site.categories %}

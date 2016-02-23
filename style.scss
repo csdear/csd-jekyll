@@ -32,13 +32,20 @@ body {
   /*border: 1px solid green; */ 
 }
 
+.container a {
+  &:hover, &:active {
+        color: $tertiaryColor;
+      }
+     
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $secondaryColor;
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 0em 0 5px;
   padding: 0;
 
   @include mobile {
@@ -278,6 +285,33 @@ nav {
   padding: 15px;
 }
 
+#sec_cont li {
+  padding-left: 7px;
+}
+
+#sec_cont ul, #sec_cont li {
+  display: block;
+  list-style-type: none;
+  list-style-image: none;
+  margin: 3px 0 0;
+  padding: 0;
+}
+
+.icons {
+  background:  url(/images/icons_sn.png) no-repeat;
+  margin-left: -19px;
+  margin-top: 12px;
+  width: 187px;
+  height: 130px;
+}
+
+.icons a {
+  display: block;
+  width: 42px;
+  height: 42px;
+  float: left;
+  margin-right: 4px;
+}
 
 .posts {
   background-color: $primaryColorHigh;  
