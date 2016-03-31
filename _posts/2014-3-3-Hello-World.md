@@ -2,6 +2,8 @@
 layout: post
 title: "You're up and ruining it!"
 published: true
+category : Sawdust
+author : "Jack Flash"
 ---
 6
 BLAH BLAH This is now with the Prose edit.  
