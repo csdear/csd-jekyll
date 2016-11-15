@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "You're up and ruining it!"
+title: "You're Up and Ruining It!"
 published: true
 category : Sawdust
 author : "Jack Flash"
 ---
-6
-BLAH BLAH This is now with the Prose edit.  
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+The first boilerplate blog entry stub. 
+"Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).""
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
