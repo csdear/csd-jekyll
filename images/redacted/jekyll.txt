@@ -1,0 +1,40 @@
+﻿AWS SSL Certificates can only be deployed on a Load Balancer or Cloudfront instance.  
+	• You do not install your ACM Certificate directly on the Amazon EC2 instances that contain your website or your application. Instead, you associate the ACM Certificate with an AWS service, such as Elastic Load Balancing or Cloudfront instance.  
+
+For this documentation, we will be putting a SSL cert on a a ELB instance we created.  
+	Currently, we are creating ELBs for each site we secure a SSL cert for, as the SSL is registered to a singular domain.
+
+Cloudfront Implementations : The second option to setup a SSL Certificate via Cloudfront is not covered here. However, this is a good solution if you have a simple site hosted within a S3 bucket and is easier to configure that the Load Balancer route.    Example tutorial :  https://deliciousbrains.com/wp-offload-s3/doc/custom-domain-https-cloudfront/
+
+STEPS OVERVIEW
+	 Setup SSL certificate with AWS Certificate Manager
+	 Create a ELB Load Balancer to deploy the SSL Certificate to
+	 Configure Route 53 to route to the load balancer
+	 Test and verify SSL Certificate implementation
+
+
+REFERENCE
+http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-create-https-ssl-load-balancer.html#create-https-lb-console
+
+
+SETTING UP THE CERTIFICATE with AMAZON CERTIFICATE MANAGER
+
+1. Go to AWS Certificate Manager ACM and click on Certificate Manager
+2. Get Started
+3. Add Domain Names
+	a. e.g. api.dws.interx2.net
+	b. note : sub domains can be added and protected with the same SSL cert by using wildcards.  e.g *.mysite.com would cover qa.mysite.com or uat.mysite.com as well
+4. Select 'Review and Request'
+	a. Email is sent to the registered owner of each domain, so you need to find out what email address is 
+
+5. Verification is deployed to the email(s) attached to the the domain. You can find what email address the verification email is sent to via a WHOIS search, or, upon confirming the certficate, the email addresses the verificaiton is sent to is displayed :   
+	a. Email IT re: internal domain address.  
+
+	
+Await verification from account owner before moving to next step.  After it has been verified, status will change to 'Issued' 
+
+
+
+
+
+
