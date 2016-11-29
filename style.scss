@@ -19,8 +19,10 @@ html {
 
 body {
 
-  background: $primaryColor url(/images/sky3.png) no-repeat center top;
-  font: 18px/1.4 $helveticaNeue;
+  /*background: $primaryColor url(/images/sky3.png) no-repeat center top;*/
+  /*background: #908E8E url(/images/sky3.png) no-repeat center top;*/
+  background: #000000 no-repeat center top;
+  font: 14px/1.4 $helveticaNeue;
   color: $lightGray;
 }
 
