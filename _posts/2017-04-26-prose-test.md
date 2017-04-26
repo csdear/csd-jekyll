@@ -1,6 +1,12 @@
 ---
-published: true
+published: false
 ---
-## A New Post Created From PROSE  
+## TESTING
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+Image upload test
+![Pasted Image at 2017_02_22_02_04 pm.png]({{site.baseurl}}/images/Pasted Image at 2017_02_22_02_04 pm.png)
+
+
+
+
+
